@@ -29,7 +29,7 @@ body_script = soup.find('div', {'class' : 'W4P4ne'})
 for script in body_script.findAll('span', {'jsname' : 'bN97Pc'}) :
     print(script.string)
     try :
-        write_file('sujin.txt', 'a', f'{script.string}\n')
+        write_file('mydata.txt', 'a', f'{script.string}\n')
     except :
         pass
 
